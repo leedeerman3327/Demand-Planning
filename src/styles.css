@@ -31,44 +31,9 @@ body {
   min-height: 100vh;
 }
 
-.forecast-path-tree .ant-tree {
-  background: transparent;
-}
-
-.forecast-path-tree .ant-tree-switcher {
-  color: #64748b;
-}
-
-.forecast-path-tree .ant-tree-node-content-wrapper {
-  padding: 0 !important;
-  background: transparent !important;
-}
-
-.forecast-path-tree .ant-tree-indent-unit {
-  width: 18px;
-}
-
-.forecast-path-tree .ant-tree-treenode {
-  align-items: flex-start;
-  padding: 4px 0;
-}
-
-.forecast-path-tree .ant-tree-list-holder-inner {
-  gap: 6px;
-}
-
-.card-enter {
-  animation: card-enter 280ms ease-out;
-}
-
-@keyframes card-enter {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.card {
+  border-radius: 28px;
+  border: 1px solid #e2e8f0;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 18px 60px rgba(15,23,42,0.06);
 }
