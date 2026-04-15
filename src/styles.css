@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --page-bg: #f4f6f8;
+  --page-grid: rgba(148, 163, 184, 0.12);
+  --text-main: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    radial-gradient(circle at top left, rgba(15, 23, 42, 0.035), transparent 26%),
+    linear-gradient(var(--page-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--page-grid) 1px, transparent 1px),
+    var(--page-bg);
+  background-size: auto, auto, 28px 28px, 28px 28px, auto;
+  color: var(--text-main);
+  font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.forecast-path-tree .ant-tree {
+  background: transparent;
+}
+
+.forecast-path-tree .ant-tree-switcher {
+  color: #64748b;
+}
+
+.forecast-path-tree .ant-tree-node-content-wrapper {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.forecast-path-tree .ant-tree-indent-unit {
+  width: 18px;
+}
+
+.forecast-path-tree .ant-tree-treenode {
+  align-items: flex-start;
+  padding: 4px 0;
+}
+
+.forecast-path-tree .ant-tree-list-holder-inner {
+  gap: 6px;
+}
+
+.card-enter {
+  animation: card-enter 280ms ease-out;
+}
+
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
